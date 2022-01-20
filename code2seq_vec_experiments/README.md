@@ -9,8 +9,8 @@ and preprocess with [code2seq](https://github.com/tech-srl/code2seq) (See script
 3. 
     - Use [code2seq](https://github.com/tech-srl/code2seq) or [code2vec](https://github.com/tech-srl/code2vec) for training. (See script `step_3_train.sh`)
     - Use [code2class](https://github.com/noemiernst/code2class) for training. With another preprocessing step (See [code2class](https://github.com/noemiernst/code2class)/preprocess.sh) to create the specific dictionary.
-      (More [here](https://gist.github.com/noemiernst/e5ef7abee5f781c76bb132c333a0ecce))
+      (More [here](../code2class_experiments/README.md))
       
 ## Results
 
-Results of my Experiments can be found [here](https://gist.github.com/noemiernst/f12e312d539e0291abe6e14b82b25f76)
+Results of my Experiments can be found [here](../results/README.md)
