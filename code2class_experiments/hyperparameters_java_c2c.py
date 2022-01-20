@@ -1,0 +1,15 @@
+hyper_params = {
+    "dataset_name": 'java-small',
+    "data_dir": 'data_preprocessed',
+    "load": False,
+    "save_dir": 'checkpoints',
+    "log_dir": 'logs',
+    "embedding_dim": 128,
+    "lstm_dim": 128,
+    "dropout": 0.25,
+    "batch_size": 64,
+    "chunks": 10,
+    "max_length": 200,
+    "max_path_length": 8,
+    "n_epochs": 20,
+}

@@ -1,0 +1,27 @@
+Source_dir=code2seq
+model=code2seq
+suffix=c2s
+
+# for code2vec:
+#Source_dir=code2vec    or whatever the location of the source dir is
+#model=code2vec
+#suffix=c2v
+
+tag=50
+type=slt
+
+pip install --upgrade pip --no-cache-dir
+pip install 'tensorflow==1.14.0' --no-cache-dir
+pip install --user rouge
+
+DATASET_NAME=${type}${tag}_noFRP_max5
+data_dir=classification_data/${type}${tag}_noFRP_max5
+data=${data_dir}/${DATASET_NAME}
+test_data=${data_dir}/${DATASET_NAME}.val.${suffix}
+model_dir=models_c2s/${DATASET_NAME}_noFRP_max5
+
+outfile="out.log"
+
+mkdir -p ${model_dir}
+set -e
+python3 -u ${Source_dir}/${model}.py --data ${data} --test ${test_data} --save_prefix ${model_dir}/model
