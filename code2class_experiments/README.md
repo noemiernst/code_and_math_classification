@@ -9,7 +9,7 @@ and preprocess with [code2seq](https://github.com/tech-srl/code2seq).
 (See script `step_2_preprocess.sh`)
 3. 
     - Use [code2seq](https://github.com/tech-srl/code2seq) or [code2vec](https://github.com/tech-srl/code2vec) for training.
-      (More [here](https://gist.github.com/noemiernst/eecefed58b2612e69d3fdd2060c85711))
+      (More [here](../code2seq_vec_experiments/README.md))
     - Use [code2class](https://github.com/noemiernst/code2class) for training. With another preprocessing step (See [code2class](https://github.com/noemiernst/code2class)/preprocess.sh) to create the specific dictionary.
 
 ## Parameters Used in Math Classification:
@@ -55,4 +55,4 @@ Use Preprocessed Java Data from [code2seq](https://github.com/tech-srl/code2seq)
 
 ## Results
 
-Results of my Experiments can be found [here](https://gist.github.com/noemiernst/f12e312d539e0291abe6e14b82b25f76)
+Results of my Experiments can be found [here](../results/README.md)
